@@ -44,9 +44,6 @@
     .header {
         height: 65px;
     }
-    .logoContainer {
-        justify-content: center;
-    }
     .navlinkContainer {
         display: none;
     }
