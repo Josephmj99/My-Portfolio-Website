@@ -1,0 +1,35 @@
+.logo-container {
+    border: 2px solid red;
+    padding: 2px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.logo-name {
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #24262A;
+}
+
+@media (max-width: 1000px) {
+    .logo-name {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 750px) {
+    .logo-name {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 450px) {
+    .logo-name {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 350px) {
+    .logo-name {
+        font-size: 1.1rem;
+    }
+}
