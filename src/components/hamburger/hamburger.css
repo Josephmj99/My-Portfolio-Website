@@ -1,0 +1,42 @@
+.hamburger-container {
+    /* border: 2px solid black; */
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: black;
+    width: 20px;
+    height: 2.5px;
+    min-height: 2px;
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+.barTransform {
+    background-color: black;
+    width: 20px;
+    height: 2.5px;
+    min-height: 2px;
+    border-radius: 5px;
+    transition: 500ms;
+}
+.barTransform-1 {
+    transform: rotate(35deg) translateY(4px) translateX(3px);
+}
+.barTransform-2 {
+    opacity: 0;
+}
+.barTransform-3 {
+    transform: rotate(-35deg) translateY(-5px) translate(4px);
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../layouts/layout.module.css';
+import Hamburger from '../components/hamburger/hamburger';
 
 
 const Header = () => {
@@ -7,7 +8,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.logoContainer}>Logo</div>
       <div className={styles.navlinkContainer}>NavLink</div>
-      <div className={styles.hamburgerContainer}>HM</div>
+      <div className={styles.hamburgerContainer}><Hamburger/></div>
     </header>
   )
 }
