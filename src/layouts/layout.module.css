@@ -37,6 +37,7 @@
     width: 50px;
     min-width: 50px;
     display: none;
+    padding: 5px;
 }
 
 @media (max-width: 1000px) {
