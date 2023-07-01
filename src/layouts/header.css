@@ -1,0 +1,53 @@
+.hamburgerMenuContainer, .menuContainerDisplay {
+    /* border: 2px solid red; */
+    display: none;
+    height: 100%;
+    width: 100%;
+    max-width: 1800px;
+    position: absolute;
+    background-color: black;
+    overflow: hidden;
+}
+.hamburgerMenuWrapper {
+    /* border: 2px solid red; */
+    position: relative;
+    top: 70px;
+    height: 100%;
+    width: inherit;
+    max-width: inherit;
+    overflow-y: hidden;
+    background-image: url(/public/mjw-pics.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+@media (max-width: 1000px) {
+    .hamburgerMenuContainer {
+        display: block;
+        transition: 500ms;
+        transform: translateX(-100%);
+    }
+    .menuContainerDisplay {
+        transition: 500ms;
+        transform: translateX(0%);
+    }
+    .hamburgerMenuWrapper {
+        top: 65px;
+    }
+}
+@media (max-width: 750px) {
+    .hamburgerMenuWrapper {
+        top: 60px;
+    }    
+}
+@media (max-width: 450px) {
+    .hamburgerMenuWrapper {
+        top: 60px;
+    }
+    
+}
+@media (max-width: 350px) {
+    .hamburgerMenuWrapper {
+        top: 55px;
+    }
+}

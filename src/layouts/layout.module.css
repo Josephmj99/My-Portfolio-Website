@@ -13,6 +13,7 @@
     box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.052);
     overflow: hidden;
     background-color: white;
+    z-index: 10;
 }
 
 .logoContainer, .navlinkContainer, .hamburgerContainer {
@@ -25,7 +26,6 @@
     align-items: center;
     overflow: hidden;
 }
-
 .logoContainer {
     width: 100%;
     justify-content: flex-start;
@@ -50,16 +50,29 @@
     .hamburgerContainer {
         display: flex;
     }
+    .hamburgerMenuContainer {
+        display: block;
+        transition: 500ms;
+        transform: translateX(0%);
+    }
+    .hamburgerMenuWrapper {
+        top: 65px;
+    }
 }
 @media (max-width: 750px) {
     .header {
         height: 60px;
     }
-    
+    .hamburgerMenuWrapper {
+        top: 60px;
+    }    
 }
 @media (max-width: 450px) {
     .header {
         height: 60px;
+    }
+    .hamburgerMenuWrapper {
+        top: 60px;
     }
     
 }
@@ -67,5 +80,7 @@
     .header {
         height: 55px;
     }
-    
+    .hamburgerMenuWrapper {
+        top: 55px;
+    }
 }
