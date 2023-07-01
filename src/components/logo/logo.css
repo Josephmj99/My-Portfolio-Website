@@ -5,11 +5,23 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    gap: 10px;
+    cursor: pointer;
+}
+.logo-icon-container {
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo-icon {
+    width: 40px;
+    height: 40px;
 }
 .logo-name {
     font-weight: 700;
     font-size: 1.3rem;
-    cursor: pointer;
     color: #24262A;
 }
 
@@ -17,19 +29,36 @@
     .logo-name {
         font-size: 1.2rem;
     }
+    .logo-icon {
+        width: 35px;
+        height: 35px;
+    }
 }
 @media (max-width: 750px) {
     .logo-name {
         font-size: 1.2rem;
+    }
+    .logo-icon {
+        width: 30px;
+        height: 30px;
     }
 }
 @media (max-width: 450px) {
     .logo-name {
         font-size: 1.1rem;
     }
+    .logo-icon {
+        width: 30px;
+        height: 30px;
+    }
 }
 @media (max-width: 350px) {
     .logo-name {
         font-size: 1.1rem;
+    }
+}
+@media (max-width: 250px) {
+    .logo-icon-container {
+        display: none;
     }
 }
