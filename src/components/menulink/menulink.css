@@ -1,0 +1,24 @@
+.menu {
+    /* border: 1px solid black; */
+    width: inherit;
+    height: 92%;
+    display: grid;
+    align-items: center;
+    overflow-y: hidden;
+    background-color: rgba(15, 162, 241, 0.124);
+}
+.menu .nav-link {
+    /* border: 2px solid red; */
+    flex-direction: column;
+    gap: 10px;
+    height: 100;
+}
+.menu .nav-link li {
+    color: white;
+}
+.menu .nav-link li:hover {
+    color: orangered;
+}
+.menu .nav-link a {
+    margin: 10px 0;
+}
